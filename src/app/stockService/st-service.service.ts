@@ -12,8 +12,8 @@ export class StServiceService {
   apple():Observable<StockData>{
     return this.http.get<StockData>('https://real-time-finance-data.p.rapidapi.com/search?query=Apple&language=en',{
       headers: new HttpHeaders()
-      .set('X-RapidAPI-Key','2422d90053msh3d151e5f48e2624p14f248jsn93fbcde2d2f8')
-      .set('X-RapidAPI-Host','real-time-finance-data.p.rapidapi.com')
+      .set('X-RapidAPI-Key','Enter your Api Key')
+      .set('X-RapidAPI-Host','Enter your Host Key')
     })
   }
 }
