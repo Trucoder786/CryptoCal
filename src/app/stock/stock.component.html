@@ -1,0 +1,65 @@
+<div class="m-10">
+    <form #From="ngForm" (ngSubmit)="submit(From.value)">
+        <div class="flex text-2xl">
+            <input class="w-full p-2 rounded-md hover:bg-blue-100 hover:border-blue-900 hover:border focus:outline-none focus:border-indigo-400 focus:ring-4" type="text" name="" id="" placeholder="Search" required ngModel>
+            <button  class="ml-2 p-2 rounded-md border border-red-900 text-white bg-red-600 hover:ring-2 hover:ring-red-900" name="search">Search</button>
+        </div>
+    </form>
+    <div class="ml-7 mt-8  text-3xl sm:grid grid-cols-2 md:text-2xl md:grid md:grid-cols-4 ">
+        <div *ngIf="searching" class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Apple</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>75</h1>
+        </div>
+        
+        <div *ngIf="stData"  class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Apple</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: {{stData.data.stock[0].price}}</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Microsoft</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Reliance</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Adani</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">TATA Motors</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Infosys</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Airtel</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+        <div class="border border-blue-900 text-white shadow-md shadow-orange-400 font-sans  m-5 rounded-xl pl-5 text-center pt-5 pb-5">
+            <h1 class="underline pb-3">Bajaj Finance</h1>
+            <h1>Open At: 75</h1>
+            <h1>Close At: 100</h1>
+            <h1>Price: 85</h1>
+        </div>
+    </div>
+</div>
